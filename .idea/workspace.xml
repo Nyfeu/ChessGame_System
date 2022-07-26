@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Colorindo os movimentos possíveis da peça!">
+    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Implementando movimentos do rei!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess_layer/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/pieces/King.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658813430708</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implementando movimentos do rei!">
+      <created>1658814204665</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658814204665</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +188,7 @@
     <MESSAGE value="Implementando os possíveis movimentos." />
     <MESSAGE value="Implementando as regras de movimentação da torre." />
     <MESSAGE value="Colorindo os movimentos possíveis da peça!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Colorindo os movimentos possíveis da peça!" />
+    <MESSAGE value="Implementando movimentos do rei!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementando movimentos do rei!" />
   </component>
 </project>

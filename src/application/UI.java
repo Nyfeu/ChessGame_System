@@ -1,5 +1,6 @@
 package application;
 
+import chess_layer.ChessMatch;
 import chess_layer.ChessPiece;
 import chess_layer.ChessPosition;
 import chess_layer.enums.Color;
@@ -36,13 +37,19 @@ public class UI {
         System.out.flush();
     }
 
-    public static void printBoard(ChessPiece[][] pieces) {
+    public static void printMatch(ChessMatch match) {
+        printBoard(match.getPieces(),match);
+        System.out.print("\nTurn: " + match.getTurn());
+        System.out.print("\nWaiting player: " + match.getCurrentPlayer());
+    }
+
+    public static void printBoard(ChessPiece[][] pieces, ChessMatch match) {
 
         System.out.println();
         for(int i = 0; i < pieces.length; i++) {
             System.out.print((8 - i) + " ");
             for(int j = 0; j < pieces.length; j++) {
-                printPiece(pieces[i][j],false);
+                printPiece(pieces[i][j],false, match);
             }
             System.out.println();
         }
@@ -50,13 +57,13 @@ public class UI {
 
     }
 
-    public static void printBoard(ChessPiece[][] pieces, boolean[][] possibleMoves) {
+    public static void printBoard(ChessPiece[][] pieces, boolean[][] possibleMoves, ChessMatch match) {
 
         System.out.println();
         for(int i = 0; i < pieces.length; i++) {
             System.out.print((8 - i) + " ");
             for(int j = 0; j < pieces.length; j++) {
-                printPiece(pieces[i][j],possibleMoves[i][j]);
+                printPiece(pieces[i][j],possibleMoves[i][j], match);
             }
             System.out.println();
         }
@@ -64,9 +71,10 @@ public class UI {
 
     }
 
-    private static void printPiece(ChessPiece piece, boolean background) {
+    private static void printPiece(ChessPiece piece, boolean background, ChessMatch match) {
         if(background) {
-            System.out.print(ANSI_BLUE_BACKGROUND);
+            if(match.getCurrentPlayer() == Color.WHITE) System.out.print(ANSI_BLUE_BACKGROUND);
+            else System.out.print(ANSI_YELLOW_BACKGROUND);
         }
         if(piece == null ) {
             System.out.print("-" + ANSI_RESET);
