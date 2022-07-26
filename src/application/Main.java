@@ -11,6 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         ChessMatch match = new ChessMatch();
         List<ChessPiece> captured = new ArrayList<>();
@@ -37,7 +38,12 @@ public class Main {
                 if(capturedPiece != null) captured.add(capturedPiece);
                 if(match.getPromoted() != null) {
                     System.out.print("Enter piece for promotion (B/N/R/Q): ");
-                    match.replacePromotedPiece(sc.nextLine());
+                    String type = sc.nextLine().toUpperCase();
+                    while (!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q")) {
+                        System.out.print("Invalid value! Enter piece for promotion (B/N/R/Q): ");
+                        type = sc.nextLine().toUpperCase();
+                    }
+                    match.replacePromotedPiece(type);
                 }
 
 

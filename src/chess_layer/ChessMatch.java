@@ -7,7 +7,6 @@ import chess_layer.enums.Color;
 import chess_layer.exceptions.ChessException;
 import chess_layer.pieces.*;
 
-import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -123,7 +122,7 @@ public class ChessMatch {
             throw new ChessException("There is no piece to be promoted!");
         }
         if(!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q")) {
-            throw new InvalidParameterException("Invalid type of promotion!");
+            return promoted;
         }
 
         Position pos = promoted.getChessPosition().toPosition();
