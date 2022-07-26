@@ -6,10 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Implementando os cavaleiros!">
+    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Implementando as rainhas!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess_layer/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/pieces/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chess_layer/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/pieces/King.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658854280521</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Implementando as rainhas!">
+      <created>1658854602383</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1658854602383</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,6 +268,7 @@
     <MESSAGE value="Implementando os peões!" />
     <MESSAGE value="Implementando os bispos!" />
     <MESSAGE value="Implementando os cavaleiros!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementando os cavaleiros!" />
+    <MESSAGE value="Implementando as rainhas!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementando as rainhas!" />
   </component>
 </project>
