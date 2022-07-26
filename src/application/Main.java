@@ -21,6 +21,7 @@ public class Main {
 
                 UI.clearScreen();
                 UI.printMatch(match, captured);
+
                 System.out.print("\nSource: ");
                 ChessPosition source = UI.readChessPosition(sc);
 
@@ -34,6 +35,10 @@ public class Main {
                 ChessPiece capturedPiece = match.performChessMove(source, target);
 
                 if(capturedPiece != null) captured.add(capturedPiece);
+                if(match.getPromoted() != null) {
+                    System.out.print("Enter piece for promotion (B/N/R/Q): ");
+                    match.replacePromotedPiece(sc.nextLine());
+                }
 
 
             } catch (ChessException | InputMismatchException e) {

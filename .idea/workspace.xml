@@ -6,10 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Implementando specialmove - rook castling!">
+    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Implementando specialmove - enPassant.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess_layer/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/pieces/Pawn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658857167713</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Implementando specialmove - enPassant.">
+      <created>1658858597720</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1658858597720</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,6 +284,7 @@
     <MESSAGE value="Implementando os cavaleiros!" />
     <MESSAGE value="Implementando as rainhas!" />
     <MESSAGE value="Implementando specialmove - rook castling!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementando specialmove - rook castling!" />
+    <MESSAGE value="Implementando specialmove - enPassant." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementando specialmove - enPassant." />
   </component>
 </project>
