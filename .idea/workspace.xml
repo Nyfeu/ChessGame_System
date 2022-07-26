@@ -6,11 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Adicionando a lógica do xeque.">
+    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Lógica do xeque mate e correção das cores das listas de peças capturadas!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chess_layer/ChessPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/ChessPiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chess_layer/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/pieces/Pawn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658850641708</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Lógica do xeque mate e correção das cores das listas de peças capturadas!">
+      <created>1658852169634</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658852169634</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +237,7 @@
     <MESSAGE value="Ajeitando o esquema de cores!" />
     <MESSAGE value="Implementando listas de peças capturadas!" />
     <MESSAGE value="Adicionando a lógica do xeque." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando a lógica do xeque." />
+    <MESSAGE value="Lógica do xeque mate e correção das cores das listas de peças capturadas!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lógica do xeque mate e correção das cores das listas de peças capturadas!" />
   </component>
 </project>
