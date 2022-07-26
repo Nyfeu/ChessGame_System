@@ -6,10 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Implementando as rainhas!">
+    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Implementando specialmove - rook castling!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess_layer/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/pieces/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chess_layer/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/pieces/Pawn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658854602383</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Implementando specialmove - rook castling!">
+      <created>1658857167712</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1658857167713</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +276,7 @@
     <MESSAGE value="Implementando os bispos!" />
     <MESSAGE value="Implementando os cavaleiros!" />
     <MESSAGE value="Implementando as rainhas!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementando as rainhas!" />
+    <MESSAGE value="Implementando specialmove - rook castling!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementando specialmove - rook castling!" />
   </component>
 </project>
