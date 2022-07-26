@@ -6,10 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Implementando a promoção dos peões.">
+    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Corrigindo a promoção dos peões!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658860096936</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Corrigindo a promoção dos peões!">
+      <created>1658860863108</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1658860863108</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +273,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Divisão das layers (camadas) do projeto!" />
     <MESSAGE value="Desenvolvendo a camada do tabuleiro (board) - implementando as classes Board, Piece e Position." />
     <MESSAGE value="Adicionando exceções ao tabuleiro: BoardException." />
     <MESSAGE value="Desenvolvendo a camada do jogo de xadrez (chess) - foram adicionados todas as peças, enums e a classe ChessPosition." />
@@ -293,6 +297,7 @@
     <MESSAGE value="Implementando specialmove - rook castling!" />
     <MESSAGE value="Implementando specialmove - enPassant." />
     <MESSAGE value="Implementando a promoção dos peões." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementando a promoção dos peões." />
+    <MESSAGE value="Corrigindo a promoção dos peões!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrigindo a promoção dos peões!" />
   </component>
 </project>

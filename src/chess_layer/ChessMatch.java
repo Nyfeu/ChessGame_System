@@ -133,6 +133,10 @@ public class ChessMatch {
 
         board.placePiece(newPiece,pos);
         piecesOnTheBoard.add(newPiece);
+
+        check = testCheck(currentPlayer);
+        Checkmate = testCheckmate(currentPlayer);
+
         return newPiece;
 
     }
