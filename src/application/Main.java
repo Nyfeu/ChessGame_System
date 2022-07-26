@@ -3,12 +3,12 @@ package application;
 import chess_layer.ChessMatch;
 import chess_layer.ChessPiece;
 import chess_layer.ChessPosition;
+import chess_layer.enums.Color;
 import chess_layer.exceptions.ChessException;
 
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -23,7 +23,7 @@ public class Main {
             try {
 
                 UI.clearScreen();
-                UI.printMatch(match);
+                UI.printMatch(match, captured);
                 System.out.print("\nSource: ");
                 ChessPosition source = UI.readChessPosition(sc);
 
@@ -36,7 +36,7 @@ public class Main {
 
                 ChessPiece capturedPiece = match.performChessMove(source, target);
 
-                if(captured != null) captured.add(capturedPiece);
+                if(capturedPiece != null) captured.add(capturedPiece);
 
 
             } catch (ChessException | InputMismatchException e) {
