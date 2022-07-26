@@ -1,5 +1,7 @@
 package board_layer;
 
+import board_layer.exceptions.BoardException;
+
 public class Board {
 
     private int rows;
@@ -23,18 +25,28 @@ public class Board {
     }
 
     public Piece piece(int row, int column) {
+
+        if(!positionExists(row,column)) throw new BoardException("invalid position!");
+
         return matOfPieces[row][column];
     }
 
     public Piece piece(Position position) {
-        return matOfPieces[position.getRow()][position.getColumn()];
+        return piece(position.getRow(),position.getColumn());
     }
 
     public void placePiece(Piece piece, Position position) {
+
+        if(thereIsAPiece(position)) throw new BoardException("there's already a piece on position!");
+
         matOfPieces[position.getRow()][position.getColumn()] = piece;
+        piece.position = position;
     }
 
-    public Piece placePiece(Position position) {
+    public Piece removePiece(Position position) {
+
+        if(!thereIsAPiece(position)) throw new BoardException("there isn't piece on position!");
+
         Piece piece = matOfPieces[position.getRow()][position.getColumn()];
         matOfPieces[position.getRow()][position.getColumn()] = null;
         return piece;
@@ -50,7 +62,10 @@ public class Board {
     }
 
     public boolean thereIsAPiece(Position position) {
-        return matOfPieces[position.getRow()][position.getColumn()] != null;
+
+        if(!positionExists(position.getRow(),position.getColumn())) throw new BoardException("invalid position!");
+
+        return piece(position) != null;
     }
 
 }
