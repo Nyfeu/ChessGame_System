@@ -42,7 +42,7 @@ public class ChessMatch {
     }
 
     private void validateInitialPosition(Position position) {
-        if (!board.thereIsAPiece(position)) throw new ChessException("there isn't piece on position!");
+        if (!board.thereIsAPiece(position)) throw new ChessException("There isn't a piece on position!");
     }
 
     private Piece makeMove(Position initialPosition, Position finalPosition) {

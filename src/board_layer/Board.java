@@ -26,7 +26,7 @@ public class Board {
 
     public Piece piece(int row, int column) {
 
-        if(!positionExists(row,column)) throw new BoardException("invalid position!");
+        if(!positionExists(row,column)) throw new BoardException("Invalid position!");
 
         return matOfPieces[row][column];
     }
@@ -37,7 +37,7 @@ public class Board {
 
     public void placePiece(Piece piece, Position position) {
 
-        if(thereIsAPiece(position)) throw new BoardException("there's already a piece on position!");
+        if(thereIsAPiece(position)) throw new BoardException("There's already a piece on position!");
 
         matOfPieces[position.getRow()][position.getColumn()] = piece;
         piece.position = position;
@@ -45,7 +45,7 @@ public class Board {
 
     public Piece removePiece(Position position) {
 
-        if(!positionExists(position.getRow(),position.getColumn())) throw new BoardException("invalid position!");
+        if(!positionExists(position.getRow(),position.getColumn())) throw new BoardException("Invalid position!");
         if (piece(position) == null) {
             return null;
         }
@@ -66,7 +66,7 @@ public class Board {
 
     public boolean thereIsAPiece(Position position) {
 
-        if(!positionExists(position.getRow(),position.getColumn())) throw new BoardException("invalid position!");
+        if(!positionExists(position.getRow(),position.getColumn())) throw new BoardException("Invalid position!");
 
         return piece(position) != null;
     }
