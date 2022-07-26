@@ -44,9 +44,13 @@ public class UI {
         System.out.println();
         printCapturedPieces(captured);
         System.out.print("\nTurn: " + match.getTurn());
-        System.out.print("\nWaiting player: " + match.getCurrentPlayer());
-        if(match.getCheck()) {
-            System.out.println("\nCheck!");
+        if(!match.getCheckmate()) {
+            System.out.print("\nWaiting player: " + match.getCurrentPlayer());
+            if (match.getCheck()) {
+                System.out.println("\nCheck!");
+            }
+        } else {
+            System.out.println("\nCHECKMATE!\nWinner: " + match.getCurrentPlayer());
         }
     }
 
@@ -116,11 +120,11 @@ public class UI {
         List<ChessPiece> white = capturedPieces.stream().filter(x -> x.getColor() == Color.WHITE).toList();
         List<ChessPiece> black = capturedPieces.stream().filter(x -> x.getColor() == Color.BLACK).toList();
         System.out.print("Captured pieces: \nWhite: ");
-        System.out.print(ANSI_YELLOW);
+        System.out.print(ANSI_BLUE);
         System.out.println(Arrays.toString(white.toArray()));
         System.out.print(ANSI_RESET);
         System.out.print("Black: ");
-        System.out.print(ANSI_BLUE);
+        System.out.print(ANSI_YELLOW);
         System.out.println(Arrays.toString(black.toArray()));
         System.out.print(ANSI_RESET);
 

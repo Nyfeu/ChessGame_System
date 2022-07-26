@@ -20,9 +20,14 @@ public class ChessMatch {
     private List<Piece> piecesOnTheBoard = new ArrayList<>();
     private List<Piece> capturedPieces = new ArrayList<>();
     private boolean check;
+    private boolean Checkmate;
 
     public int getTurn() {
         return turn;
+    }
+
+    public boolean getCheckmate() {
+        return Checkmate;
     }
 
     public Color getCurrentPlayer() {
@@ -76,7 +81,11 @@ public class ChessMatch {
 
         check = (testCheck(opponent(currentPlayer)));
 
-        nextTurn();
+        if(testCheckmate(opponent(currentPlayer))) {
+            Checkmate = true;
+        } else {
+            nextTurn();
+        }
         return (ChessPiece) capturedPiece;
 
     }
@@ -141,6 +150,33 @@ public class ChessMatch {
         }
         return false;
     }
+    private boolean testCheckmate(Color color) {
+
+        if(!testCheck(color)) {
+            return false;
+        }
+        List<Piece> list = piecesOnTheBoard.stream().filter(x -> ((ChessPiece)x).getColor() == color).toList();
+        for(Piece x : list) {
+            boolean[][] mat = x.possibleMoves();
+            for(int i = 0; i < board.getRows(); i++) {
+                for(int j = 0; j < board.getColumns(); j++) {
+                    if(mat[i][j]) {
+                        ChessPosition source = ((ChessPiece)x).getChessPosition();
+                        ChessPosition target = ChessPosition.fromPosition(new Position(i,j));
+                        Piece captured = makeMove(source.toPosition(),target.toPosition());
+                        boolean testeCheck = testCheck(color);
+                        undoMove(source,target,captured);
+                        if(!testeCheck) {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+        return true;
+
+    }
+
 
     private void placeNewPiece(char column, int row, ChessPiece piece) {
         board.placePiece(piece,new ChessPosition(column,row).toPosition());
@@ -148,19 +184,12 @@ public class ChessMatch {
     }
 
     private void initialSetup() {
-        placeNewPiece('c', 1, new Rook(board, Color.WHITE));
-        placeNewPiece('c', 2, new Pawn(board, Color.WHITE));
-        placeNewPiece('d', 2, new King(board, Color.WHITE));
-        placeNewPiece('e', 2, new Pawn(board, Color.WHITE));
-        placeNewPiece('e', 1, new Rook(board, Color.WHITE));
-        placeNewPiece('d', 1, new King(board, Color.WHITE));
+        placeNewPiece('h', 7, new Rook(board, Color.WHITE));
+        placeNewPiece('d', 1, new Rook(board, Color.WHITE));
+        placeNewPiece('e', 1, new King(board, Color.WHITE));
 
-        placeNewPiece('c', 7, new Pawn(board, Color.BLACK));
-        placeNewPiece('c', 8, new Rook(board, Color.BLACK));
-        placeNewPiece('d', 7, new Pawn(board, Color.BLACK));
-        placeNewPiece('e', 7, new Pawn(board, Color.BLACK));
-        placeNewPiece('e', 8, new Rook(board, Color.BLACK));
-        placeNewPiece('d', 8, new King(board, Color.BLACK));
+        placeNewPiece('a', 8, new King(board, Color.BLACK));
+        placeNewPiece('b', 8, new Rook(board, Color.BLACK));
     }
 
 }
