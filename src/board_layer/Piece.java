@@ -1,7 +1,7 @@
 
 package board_layer;
 
-public class Piece {
+abstract public class Piece {
 
     protected Position position;
     private Board board;
