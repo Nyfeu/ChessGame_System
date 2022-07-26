@@ -6,6 +6,7 @@ import board_layer.Position;
 import chess_layer.enums.Color;
 import chess_layer.exceptions.ChessException;
 import chess_layer.pieces.King;
+import chess_layer.pieces.Pawn;
 import chess_layer.pieces.Rook;
 
 public class ChessMatch {
@@ -43,6 +44,7 @@ public class ChessMatch {
 
     private void validateInitialPosition(Position position) {
         if (!board.thereIsAPiece(position)) throw new ChessException("There isn't a piece on position!");
+        if (!board.piece(position).isThereAnyPossibleMove()) throw new ChessException("There's no possible movement for the chosen piece!");
     }
 
     private Piece makeMove(Position initialPosition, Position finalPosition) {
@@ -58,16 +60,16 @@ public class ChessMatch {
 
     private void initialSetup() {
         placeNewPiece('c', 1, new Rook(board, Color.WHITE));
-        placeNewPiece('c', 2, new Rook(board, Color.WHITE));
-        placeNewPiece('d', 2, new Rook(board, Color.WHITE));
-        placeNewPiece('e', 2, new Rook(board, Color.WHITE));
+        placeNewPiece('c', 2, new Pawn(board, Color.WHITE));
+        placeNewPiece('d', 2, new Pawn(board, Color.WHITE));
+        placeNewPiece('e', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('e', 1, new Rook(board, Color.WHITE));
         placeNewPiece('d', 1, new King(board, Color.WHITE));
 
-        placeNewPiece('c', 7, new Rook(board, Color.BLACK));
+        placeNewPiece('c', 7, new Pawn(board, Color.BLACK));
         placeNewPiece('c', 8, new Rook(board, Color.BLACK));
-        placeNewPiece('d', 7, new Rook(board, Color.BLACK));
-        placeNewPiece('e', 7, new Rook(board, Color.BLACK));
+        placeNewPiece('d', 7, new Pawn(board, Color.BLACK));
+        placeNewPiece('e', 7, new Pawn(board, Color.BLACK));
         placeNewPiece('e', 8, new Rook(board, Color.BLACK));
         placeNewPiece('d', 8, new King(board, Color.BLACK));
     }
