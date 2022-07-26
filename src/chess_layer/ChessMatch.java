@@ -5,10 +5,7 @@ import board_layer.Piece;
 import board_layer.Position;
 import chess_layer.enums.Color;
 import chess_layer.exceptions.ChessException;
-import chess_layer.pieces.Bishop;
-import chess_layer.pieces.King;
-import chess_layer.pieces.Pawn;
-import chess_layer.pieces.Rook;
+import chess_layer.pieces.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -201,6 +198,8 @@ public class ChessMatch {
         placeNewPiece('f', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('g', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('h', 2, new Pawn(board, Color.WHITE));
+        placeNewPiece('g', 1, new Knight(board, Color.WHITE));
+        placeNewPiece('b', 1, new Knight(board, Color.WHITE));
 
         placeNewPiece('a', 8, new Rook(board, Color.BLACK));
         placeNewPiece('e', 8, new King(board, Color.BLACK));
@@ -215,6 +214,8 @@ public class ChessMatch {
         placeNewPiece('f', 7, new Pawn(board, Color.BLACK));
         placeNewPiece('g', 7, new Pawn(board, Color.BLACK));
         placeNewPiece('h', 7, new Pawn(board, Color.BLACK));
+        placeNewPiece('g', 8, new Knight(board, Color.BLACK));
+        placeNewPiece('b', 8, new Knight(board, Color.BLACK));
 
     }
 
