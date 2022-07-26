@@ -38,18 +38,18 @@ public class UI {
     }
 
     public static void printMatch(ChessMatch match) {
-        printBoard(match.getPieces(),match);
+        printBoard(match.getPieces(),match.getCurrentPlayer());
         System.out.print("\nTurn: " + match.getTurn());
         System.out.print("\nWaiting player: " + match.getCurrentPlayer());
     }
 
-    public static void printBoard(ChessPiece[][] pieces, ChessMatch match) {
+    public static void printBoard(ChessPiece[][] pieces, Color color) {
 
         System.out.println();
         for(int i = 0; i < pieces.length; i++) {
             System.out.print((8 - i) + " ");
             for(int j = 0; j < pieces.length; j++) {
-                printPiece(pieces[i][j],false, match);
+                printPiece(pieces[i][j],false, color);
             }
             System.out.println();
         }
@@ -57,13 +57,13 @@ public class UI {
 
     }
 
-    public static void printBoard(ChessPiece[][] pieces, boolean[][] possibleMoves, ChessMatch match) {
+    public static void printBoard(ChessPiece[][] pieces, boolean[][] possibleMoves, Color color) {
 
         System.out.println();
         for(int i = 0; i < pieces.length; i++) {
             System.out.print((8 - i) + " ");
             for(int j = 0; j < pieces.length; j++) {
-                printPiece(pieces[i][j],possibleMoves[i][j], match);
+                printPiece(pieces[i][j],possibleMoves[i][j], color);
             }
             System.out.println();
         }
@@ -71,9 +71,9 @@ public class UI {
 
     }
 
-    private static void printPiece(ChessPiece piece, boolean background, ChessMatch match) {
+    private static void printPiece(ChessPiece piece, boolean background, Color color) {
         if(background) {
-            if(match.getCurrentPlayer() == Color.WHITE) System.out.print(ANSI_BLUE_BACKGROUND);
+            if(color == Color.WHITE) System.out.print(ANSI_BLUE_BACKGROUND);
             else System.out.print(ANSI_YELLOW_BACKGROUND);
         }
         if(piece == null ) {

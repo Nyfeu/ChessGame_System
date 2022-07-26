@@ -29,7 +29,7 @@ public class Main {
 
                 boolean[][] possibleMoves = match.possibleMoves(source);
                 UI.clearScreen();
-                UI.printBoard(match.getPieces(),possibleMoves, match);
+                UI.printBoard(match.getPieces(),possibleMoves, match.getCurrentPlayer());
 
                 System.out.print("\nTarget: ");
                 ChessPosition target = UI.readChessPosition(sc);
