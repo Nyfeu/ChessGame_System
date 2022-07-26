@@ -3,12 +3,9 @@ package application;
 import chess_layer.ChessMatch;
 import chess_layer.ChessPiece;
 import chess_layer.ChessPosition;
-import chess_layer.enums.Color;
 import chess_layer.exceptions.ChessException;
 
-import java.lang.reflect.Array;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Main {
 
