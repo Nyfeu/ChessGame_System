@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Adicionando exceções ao tabuleiro: BoardException.">
-      <change afterPath="$PROJECT_DIR$/src/chess_layer/ChessPiece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess_layer/ChessPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess_layer/enums/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess_layer/pieces/Bishop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess_layer/pieces/King.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess_layer/pieces/Knight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess_layer/pieces/Pawn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess_layer/pieces/Queen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chess_layer/pieces/Rook.java" afterDir="false" />
+    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Desenvolvendo a camada do jogo de xadrez (chess) - foram adicionados todas as peças, enums e a classe ChessPosition.">
+      <change afterPath="$PROJECT_DIR$/src/application/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/board_layer/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board_layer/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658800190963</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Desenvolvendo a camada do jogo de xadrez (chess) - foram adicionados todas as peças, enums e a classe ChessPosition.">
+      <created>1658804825605</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658804825605</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +116,7 @@
     <MESSAGE value="Divisão das layers (camadas) do projeto!" />
     <MESSAGE value="Desenvolvendo a camada do tabuleiro (board) - implementando as classes Board, Piece e Position." />
     <MESSAGE value="Adicionando exceções ao tabuleiro: BoardException." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando exceções ao tabuleiro: BoardException." />
+    <MESSAGE value="Desenvolvendo a camada do jogo de xadrez (chess) - foram adicionados todas as peças, enums e a classe ChessPosition." />
+    <option name="LAST_COMMIT_MESSAGE" value="Desenvolvendo a camada do jogo de xadrez (chess) - foram adicionados todas as peças, enums e a classe ChessPosition." />
   </component>
 </project>
