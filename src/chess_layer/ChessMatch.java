@@ -1,7 +1,10 @@
 package chess_layer;
 
 import board_layer.Board;
+import board_layer.Piece;
+import board_layer.Position;
 import chess_layer.enums.Color;
+import chess_layer.exceptions.ChessException;
 import chess_layer.pieces.King;
 import chess_layer.pieces.Rook;
 
@@ -28,6 +31,25 @@ public class ChessMatch {
         }
         return mat;
 
+    }
+
+    public ChessPiece performChessMove(ChessPosition initialPosition, ChessPosition finalPosition) {
+
+        validateInitialPosition(initialPosition.toPosition());
+        Piece capturedPiece = makeMove(initialPosition.toPosition(),finalPosition.toPosition());
+        return (ChessPiece) capturedPiece;
+
+    }
+
+    private void validateInitialPosition(Position position) {
+        if (!board.thereIsAPiece(position)) throw new ChessException("there isn't piece on position!");
+    }
+
+    private Piece makeMove(Position initialPosition, Position finalPosition) {
+        Piece p = board.removePiece(initialPosition);
+        Piece captured = board.removePiece(finalPosition);
+        board.placePiece(p,finalPosition);
+        return captured;
     }
 
     private void placeNewPiece(char column, int row, ChessPiece piece) {
