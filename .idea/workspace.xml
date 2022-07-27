@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Corrigindo a lógica do xeque e xeque mate com promoção dos peões.">
+    <list default="true" id="a1308a8d-e6a5-4c89-8656-100a3e6e15a4" name="Changes" comment="Corrigindo alguns detalhes...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board_layer/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board_layer/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess_layer/ChessMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -266,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658862048330</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Corrigindo alguns detalhes...">
+      <created>1658888367717</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1658888367717</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +288,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adicionando exceções ao tabuleiro: BoardException." />
     <MESSAGE value="Desenvolvendo a camada do jogo de xadrez (chess) - foram adicionados todas as peças, enums e a classe ChessPosition." />
     <MESSAGE value="Implementando a classe ChessMatch (partida de xadrez) e a interface de usuário - classe UI." />
     <MESSAGE value="Criando a exceção do jogo de xadrez - classe ChessException." />
@@ -306,6 +312,7 @@
     <MESSAGE value="Implementando a promoção dos peões." />
     <MESSAGE value="Corrigindo a promoção dos peões!" />
     <MESSAGE value="Corrigindo a lógica do xeque e xeque mate com promoção dos peões." />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrigindo a lógica do xeque e xeque mate com promoção dos peões." />
+    <MESSAGE value="Corrigindo alguns detalhes..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrigindo alguns detalhes..." />
   </component>
 </project>
