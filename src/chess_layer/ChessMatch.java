@@ -154,7 +154,7 @@ public class ChessMatch {
 
     private void validateInitialPosition(Position position) {
         if (currentPlayer != ((ChessPiece)board.piece(position)).getColor()) throw new ChessException("The chosen piece isn't yours!");
-        if (!board.thereIsAPiece(position)) throw new ChessException("There isn't a piece on position!");
+        if (!board.thereIsAPiece(position)) throw new ChessException("There is no piece on position!");
         if (!board.piece(position).isThereAnyPossibleMove()) throw new ChessException("There's no possible movement for the chosen piece!");
     }
 

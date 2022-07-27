@@ -49,7 +49,7 @@ public class Main {
 
             } catch (ChessException | InputMismatchException e) {
 
-                System.out.println("\n" + e.getMessage() + "\n\nPress 'Enter' to try again!");
+                System.out.println("\n" + e.getMessage() + "\n\nPress ENTER to try again!");
                 sc.nextLine();
 
             }
@@ -58,7 +58,7 @@ public class Main {
 
         UI.clearScreen();
         UI.printMatch(match,captured);
-
+        sc.close();
 
     }
 
