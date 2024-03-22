@@ -2,9 +2,13 @@
 
 ## Overview
 
-This is a simple Chess Game System on terminal - developed in Java, using the Object-Oriented Programming (OOP) paradigm.
+This Chess Game System is a Java application designed to run in the terminal environment. It offers a simple yet engaging experience for playing chess, leveraging the power of Object-Oriented Programming (OOP) principles. With its intuitive interface and comprehensive functionality, it provides users with the opportunity to enjoy the classic game of chess right from their command line interface.
 
-
+</br>
+<div>
+  <img src="images/start.png" alt="Terminal Game" width="500">
+</div>
+</br>
 
 ## Features
 - Play chess against another player on the same computer.
